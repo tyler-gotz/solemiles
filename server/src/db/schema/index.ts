@@ -1,0 +1,2 @@
+// SHOES
+export * from "./shoes";

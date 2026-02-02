@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1769721920209,
+      "tag": "0000_add_shoes_table",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1769723318157,
+      "tag": "0001_modify_shoes_id_type",
+      "breakpoints": true
+    }
+  ]
+}
