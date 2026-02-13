@@ -67,7 +67,7 @@ const Dashboard: React.FC = () => {
                                 <Text
                                     fontSize="2xl"
                                 >
-                                    42
+                                    109999
                                 </Text>
                             </Card.Body>
                         </Card.Root>

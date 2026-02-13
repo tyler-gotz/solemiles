@@ -1,6 +1,6 @@
 {
-  "id": "399c16f6-f176-4a8e-9fae-01fcbdcb8954",
-  "prevId": "2b06843c-c3c4-4fef-8a47-af88bc61921c",
+  "id": "54c8f920-b04f-45c4-bf76-2f38cbcb7589",
+  "prevId": "399c16f6-f176-4a8e-9fae-01fcbdcb8954",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -70,7 +70,8 @@
           "name": "run_id",
           "type": "uuid",
           "primaryKey": true,
-          "notNull": true
+          "notNull": true,
+          "default": "gen_random_uuid()"
         },
         "date": {
           "name": "date",

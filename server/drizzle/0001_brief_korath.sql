@@ -1,0 +1,1 @@
+ALTER TABLE "shoes" ALTER COLUMN "shoe_id" SET DEFAULT gen_random_uuid();

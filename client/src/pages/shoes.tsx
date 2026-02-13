@@ -1,16 +1,12 @@
 import Navigation from '@/components/navigation'
+import SkeletonGrid from '@/components/skeleton-grid'
+import { GRID_COLUMNS } from '@/constants/gridColumns'
 import { useShoes } from '@/hooks/useShoes'
 import type { Shoe } from '@/types/shoe'
-import { Box, Button, Card, Grid, GridItem, Skeleton, SkeletonText, Stack, Text } from '@chakra-ui/react'
+import { Box, Button, Card, Grid, GridItem, Text } from '@chakra-ui/react'
 import { Calendar, PlusIcon } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router'
-
-const GRID_COLUMNS = {
-    base: '1fr',
-    md: 'repeat(2, 1fr)',
-    lg: 'repeat(3, 1fr)',
-}
 
 const ShoesLayout: React.FC<React.PropsWithChildren> = ({ children }) => (
     <Box minHeight="100vh" background="gray.50">
@@ -40,27 +36,6 @@ const Header: React.FC<HeaderProps> = ({ isError }) => (
             )
         }
     </Box>
-)
-
-const SkeletonGrid = () => (
-    <Grid templateColumns={GRID_COLUMNS} gap={6}>
-        {[1, 2, 3].map((i) => (
-            <GridItem key={i}>
-                <Card.Root>
-                    <Card.Header>
-                        <Skeleton height="20px" width="70%" mb={2} />
-                        <SkeletonText noOfLines={1} />
-                    </Card.Header>
-                    <Card.Body>
-                        <Stack gap={2}>
-                            <Skeleton height="16px" width="50%" />
-                            <Skeleton height="16px" width="60%" />
-                        </Stack>
-                    </Card.Body>
-                </Card.Root>
-            </GridItem>
-        ))}
-    </Grid>
 )
 
 const EmptyState = () => (
@@ -108,7 +83,7 @@ const ShoesGrid: React.FC<ShoesGridProps> = ({ shoes }) => (
                             >
                                 <Box as={Calendar} boxSize="1rem" />
                                 Purchased on{' '}
-                                {new Date(shoe.purchaseDate).toLocaleDateString()}
+                                {shoe.purchaseDate}
                             </Box>
                         </Card.Body>
                     </Card.Root>

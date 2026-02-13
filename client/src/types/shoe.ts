@@ -1,7 +1,9 @@
 export type Shoe = {
-    shoeId: number;
+    shoeId: string;
     name: string;
     brand: string;
     model: string;
     purchaseDate: string;
 }
+
+export type ShoeFormData = Omit<Shoe, 'shoeId'>;

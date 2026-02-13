@@ -1,0 +1,1 @@
+ALTER TABLE "runs" ALTER COLUMN "run_id" SET DEFAULT gen_random_uuid();

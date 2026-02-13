@@ -1,1 +1,0 @@
-ALTER TABLE "shoes" ALTER COLUMN "shoe_id" SET DATA TYPE integer;

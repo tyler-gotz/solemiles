@@ -1,7 +1,7 @@
-import { date, integer, pgTable, timestamp, varchar } from "drizzle-orm/pg-core";
+import { date, pgTable, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
 
 export const shoeSchema = pgTable("shoes", {
-    shoeId: integer("shoe_id").primaryKey(),
+    shoeId: uuid("shoe_id").defaultRandom().primaryKey(),
     name: varchar("name", { length: 255 }).notNull(),
     brand: varchar("brand", { length: 255 }).notNull(),
     model: varchar("model", { length: 255 }).notNull(),

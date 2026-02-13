@@ -5,15 +5,22 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1769721920209,
-      "tag": "0000_add_shoes_table",
+      "when": 1770917388117,
+      "tag": "0000_common_stick",
       "breakpoints": true
     },
     {
       "idx": 1,
       "version": "7",
-      "when": 1769723318157,
-      "tag": "0001_modify_shoes_id_type",
+      "when": 1770917656149,
+      "tag": "0001_brief_korath",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1771013474900,
+      "tag": "0002_loving_hitman",
       "breakpoints": true
     }
   ]
